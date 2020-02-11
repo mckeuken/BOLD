@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller_map-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="View Controller_map" customClass="ViewControllerMap" customModule="BOLDPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jBP-3x-TzM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69z-oa-5R2">
+                                <rect key="frame" x="305" y="617" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <segue destination="o7p-5j-fY0" kind="show" id="Grg-qm-SMN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jBP-3x-TzM" firstAttribute="leading" secondItem="jZo-36-WwD" secondAttribute="leading" id="5cD-mY-RYR"/>
+                            <constraint firstItem="jBP-3x-TzM" firstAttribute="bottom" secondItem="jZo-36-WwD" secondAttribute="bottom" id="6lU-G6-Yil"/>
+                            <constraint firstItem="jBP-3x-TzM" firstAttribute="trailing" secondItem="jZo-36-WwD" secondAttribute="trailing" id="c8X-qc-nZu"/>
+                            <constraint firstItem="jBP-3x-TzM" firstAttribute="top" secondItem="jZo-36-WwD" secondAttribute="top" id="emK-P2-VBj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jZo-36-WwD"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="jBP-3x-TzM" id="ShF-kq-cLp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.60000000000002" y="35.532233883058474"/>
+        </scene>
+        <!--View Controller_AR-->
+        <scene sceneID="Ht7-Hg-hSV">
+            <objects>
+                <viewController id="o7p-5j-fY0" userLabel="View Controller_AR" customClass="ViewControllerAR" customModule="BOLDPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0RG-Uh-Kqc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePp-ss-KTR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsA-ng-qgo">
+                                <rect key="frame" x="317" y="617" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Q9d-UZ-SBq"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4i-QS-RHs" userLabel="statusTextView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="kaX-4V-6YG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="nta-F8-U23"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ePp-ss-KTR" firstAttribute="top" secondItem="gpL-NX-itZ" secondAttribute="top" id="17a-NG-FyN"/>
+                            <constraint firstItem="F4i-QS-RHs" firstAttribute="trailing" secondItem="gpL-NX-itZ" secondAttribute="trailing" id="6w8-7i-Gux"/>
+                            <constraint firstItem="F4i-QS-RHs" firstAttribute="leading" secondItem="gpL-NX-itZ" secondAttribute="leading" id="AAv-ds-58i"/>
+                            <constraint firstItem="ePp-ss-KTR" firstAttribute="bottom" secondItem="gpL-NX-itZ" secondAttribute="bottom" id="CU0-bw-pkQ"/>
+                            <constraint firstItem="ePp-ss-KTR" firstAttribute="trailing" secondItem="gpL-NX-itZ" secondAttribute="trailing" id="TEO-Gx-QhK"/>
+                            <constraint firstItem="F4i-QS-RHs" firstAttribute="top" secondItem="gpL-NX-itZ" secondAttribute="top" id="V9n-7U-ZKs"/>
+                            <constraint firstItem="ePp-ss-KTR" firstAttribute="leading" secondItem="gpL-NX-itZ" secondAttribute="leading" id="ahu-ni-2no"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gpL-NX-itZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneViewAR" destination="ePp-ss-KTR" id="Qhj-Vu-abD"/>
+                        <outlet property="statusTextView" destination="F4i-QS-RHs" id="NgI-7U-bJd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yj3-cN-QY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1709.5999999999999" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>
