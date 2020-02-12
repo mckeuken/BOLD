@@ -23,26 +23,27 @@ class Boulders: NSObject, MKAnnotation {
   init?(json: [Any]) {
     /**
      De json file die wordt ingelezen heeft de volgende layout:
-        [0]: counter
-        [1]: Naam van de route of van het gebied
-        [2]: Beschrijving van de route of van het gebied
-		[3]: Keywords route
-        [4]: Naam van het gebied (dus dubble op voor het gebied, maar zo zie je wel in welk gebied de route valt
-        [5]: Categorie: gebied of route
-        [6]: land
+        [0]: Naam
+        [1]: Beschrijving van de route of van het gebied
+        [2]: Keywords
+		[3]: Regio
+        [4]: Gebied / moeilijkheidsgraad
+        [5]: Klimgebied
+		[6]: bleau info website
         [7]: latitude GPS
         [8]: longitude GPS
+	
     */
     //  Selecteer de titel van het gebied
-    if let title = json[1] as? String {
+    if let title = json[0] as? String {
       self.title = title
     } else {
       self.title = "No Title"
     }
     // Selecteer de beschrijing van het gebied / route:
-    self.locationName = json[2] as! String
+    self.locationName = json[1] as! String
     // Selecteer de discipline (dus gaat het hier om een gebied of route?):
-    self.categorie = json[5] as! String
+    self.categorie = json[4] as! String
     // Selecteer de GPS locaties:
     if let latitude = Double(json[7] as! String),
       let longitude = Double(json[8] as! String) {

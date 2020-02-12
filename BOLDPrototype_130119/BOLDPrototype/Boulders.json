@@ -1139,7 +1139,7 @@
 		"Franchard Isatis",
 		"Route7A",
 		"Fontainebleau",
-		"website",
+		"https://bleau.info/isatis/17601.html?locale=en",
 		"48.40891",
 	  	"2.60660"
 	  ],
@@ -1149,7 +1149,7 @@
 		"Franchard Isatis",
 		"Route7A",
 		"Fontainebleau",
-		"website",
+		"https://bleau.info/isatis/17459.html",
 		"48.40891",
 	  	"2.60660"
 	  ],
@@ -1159,22 +1159,10 @@
 		"Franchard Isatis",
 		"Route7A",
 		"Fontainebleau",
-		"website",
+		"https://bleau.info/isatis/2308.html",
 		"48.40873",
 	  	"2.60605"
 	  ],
-	  
-	  [ "Naam",
-		"Beschrijving",
-		"keywords",
-		"Franchard Isatis",
-		"Route7A",
-		"Fontainebleau",
-		"website",
-		"coord",
-	  	"coord"
-	  ],
-	  
 	  [ "L'entre-toit",
 		"Sitstart of the former white n°38, on the backside of the boulder with El Poussah.",
 		"overhang, sitstart",
@@ -1191,6 +1179,7 @@
 		"Franchard Isatis",
 		"Route6A",
 		"Fontainebleau",
+		"https://bleau.info/isatis/3038.html",
 		"48.409602",
 		"2.600077"
 	  ],
@@ -1200,6 +1189,7 @@
 		"Franchard Isatis",
 		"Route5+",
 		"Fontainebleau",
+		"https://bleau.info/isatis/3005.html",
 		"48.408965",
 		"2.605836"
 	  ],
@@ -1209,6 +1199,7 @@
 		"Franchard Isatis",
 		"Route4+",
 		"Fontainebleau",
+		"https://bleau.info/isatis/2986.html",
 		"48.409513",
 		"2.60112"
 	  ],
@@ -1218,6 +1209,7 @@
 		"Franchard Isatis",
 		"Route3+",
 		"Fontainebleau",
+		"https://bleau.info/isatis/2932.html",
 		"48.409436",
 		"2.601392"
 	  ]
